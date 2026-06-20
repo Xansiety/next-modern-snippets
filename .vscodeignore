@@ -1,0 +1,7 @@
+.git/
+.github/
+.vscode/
+.claude/
+node_modules/
+*.vsix
+.gitignore
