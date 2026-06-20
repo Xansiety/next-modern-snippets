@@ -2,7 +2,7 @@
   "name": "next-modern-snippets",
   "displayName": "Next Modern Snippets",
   "description": "Modern snippets for React and Next.js 15+ development",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "xansiety",
   "engines": {
     "vscode": "^1.80.0"
