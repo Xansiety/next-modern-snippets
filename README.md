@@ -8,22 +8,41 @@ Modern snippets for React and Next.js 15+ development. Built for the latest patt
 
 ## Snippets
 
+### React
+
 | Prefix   | Name                            | Description                                          |
 | -------- | ------------------------------- | ---------------------------------------------------- |
 | `prc`    | Page Component                  | Simple page component                                |
 | `prcfc`  | Functional Component (FC)       | Arrow function with `React.FC<Props>`                |
 | `prca`   | Async Server Component          | Server component with async data fetching            |
 | `prch`   | Custom Hook                     | Hook with `useState` and `useEffect`                 |
+| `crc`    | Client Component                | Component with `"use client"` directive              |
+| `rfc`    | Arrow Function Component        | Arrow function with named export                     |
+| `rfce`   | Arrow Function Component (DE)   | Arrow function with default export                   |
+| `rmc`    | Memo Component                  | Component wrapped with `memo()`                      |
+| `ebc`    | Error Boundary                  | React 19 `ErrorBoundary` wrapper component           |
+
+### Next.js
+
+| Prefix   | Name                            | Description                                          |
+| -------- | ------------------------------- | ---------------------------------------------------- |
 | `lmrc`   | Layout with Metadata            | Layout component with `Metadata` export              |
 | `lrc`    | Layout without Metadata         | Layout component without metadata                    |
-| `crc`    | Client Component                | Component with `"use client"` directive              |
 | `mr`     | Static Metadata                 | Static `Metadata` export                             |
 | `gmrf`   | Generate Metadata               | `generateMetadata` function for dynamic SEO          |
 | `gsp`    | Generate Static Params          | `generateStaticParams` function                      |
 | `ldc`    | Loading Component               | Loading UI component                                 |
 | `err`    | Error Component                 | Error segment with reset functionality               |
-| `ebc`    | Error Boundary                  | React 19 `ErrorBoundary` wrapper component           |
 | `prcsp`  | Page with searchParams          | Async page with params and searchParams (Next.js 15+)|
+
+### React Native
+
+| Prefix   | Name                            | Description                                          |
+| -------- | ------------------------------- | ---------------------------------------------------- |
+| `rnf`    | Function Component              | React Native function component                      |
+| `rnfs`   | Function Component + Styles     | React Native function with `StyleSheet`              |
+| `rnfe`   | Arrow Function Component        | React Native arrow function with default export      |
+| `rnfes`  | Arrow Function + Styles         | React Native arrow function with `StyleSheet`        |
 
 ## Usage
 

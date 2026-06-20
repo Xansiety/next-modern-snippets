@@ -258,5 +258,104 @@
       "\t);",
       "}"
     ]
+  },
+  "React Arrow Function Component": {
+    "prefix": "rfc",
+    "description": "React arrow function component with named export",
+    "body": [
+      "export const ${1:${TM_FILENAME_BASE/([a-z]+(?:-[a-z]+)*)/${1:/pascalcase}/}} = () => {",
+      "\treturn <>$0</>;",
+      "};"
+    ]
+  },
+  "React Arrow Function Component Default Export": {
+    "prefix": "rfce",
+    "description": "React arrow function component with default export",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE/([a-z]+(?:-[a-z]+)*)/${1:/pascalcase}/}} = () => {",
+      "\treturn <>$0</>;",
+      "};",
+      "",
+      "export default $1;"
+    ]
+  },
+  "React Memo Component": {
+    "prefix": "rmc",
+    "description": "React memo wrapped component",
+    "body": [
+      "import { memo } from \"react\";",
+      "",
+      "export default memo(function ${1:${TM_FILENAME_BASE/([a-z]+(?:-[a-z]+)*)/${1:/pascalcase}/}}() {",
+      "\treturn <>$0</>;",
+      "});"
+    ]
+  },
+  "React Native Function Component": {
+    "prefix": "rnf",
+    "description": "React Native function component",
+    "body": [
+      "import { View, Text } from \"react-native\";",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE/([a-z]+(?:-[a-z]+)*)/${1:/pascalcase}/}}() {",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>$0</Text>",
+      "\t\t</View>",
+      "\t);",
+      "}"
+    ]
+  },
+  "React Native Function Component with StyleSheet": {
+    "prefix": "rnfs",
+    "description": "React Native function component with StyleSheet",
+    "body": [
+      "import { StyleSheet, View, Text } from \"react-native\";",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE/([a-z]+(?:-[a-z]+)*)/${1:/pascalcase}/}}() {",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>$0</Text>",
+      "\t\t</View>",
+      "\t);",
+      "}",
+      "",
+      "const styles = StyleSheet.create({});"
+    ]
+  },
+  "React Native Arrow Function Component": {
+    "prefix": "rnfe",
+    "description": "React Native arrow function component with default export",
+    "body": [
+      "import { View, Text } from \"react-native\";",
+      "",
+      "const ${1:${TM_FILENAME_BASE/([a-z]+(?:-[a-z]+)*)/${1:/pascalcase}/}} = () => {",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>$0</Text>",
+      "\t\t</View>",
+      "\t);",
+      "};",
+      "",
+      "export default $1;"
+    ]
+  },
+  "React Native Arrow Function Component with StyleSheet": {
+    "prefix": "rnfes",
+    "description": "React Native arrow function component with StyleSheet",
+    "body": [
+      "import { View, Text } from \"react-native\";",
+      "",
+      "const ${1:${TM_FILENAME_BASE/([a-z]+(?:-[a-z]+)*)/${1:/pascalcase}/}} = () => {",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>$0</Text>",
+      "\t\t</View>",
+      "\t);",
+      "};",
+      "",
+      "export default $1;",
+      "",
+      "const styles = StyleSheet.create({});"
+    ]
   }
 }
