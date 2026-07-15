@@ -13,6 +13,26 @@
       "}"
     ]
   },
+  "Page Component with Metadata": {
+    "prefix": "prcm",
+    "description": "Next.js page component with metadata export",
+    "body": [
+      "import type { Metadata } from \"next\";",
+      "",
+      "export const metadata: Metadata = {",
+      "\ttitle: \"${2:Title}\",",
+      "};",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE/([a-z]+(?:-[a-z]+)*)/${1:/pascalcase}/}}() {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t<h1>$1</h1>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t);",
+      "}"
+    ]
+  },
   "Functional Component with React.FC and Props": {
     "prefix": "prcfc",
     "description": "React functional component with React.FC and Props type",
@@ -272,6 +292,23 @@
     "prefix": "rfce",
     "description": "React arrow function component with default export",
     "body": [
+      "const ${1:${TM_FILENAME_BASE/([a-z]+(?:-[a-z]+)*)/${1:/pascalcase}/}} = () => {",
+      "\treturn <>$0</>;",
+      "};",
+      "",
+      "export default $1;"
+    ]
+  },
+  "React Arrow Function Component Default Export with Metadata": {
+    "prefix": "rfcem",
+    "description": "React arrow function component with default export and metadata",
+    "body": [
+      "import type { Metadata } from \"next\";",
+      "",
+      "export const metadata: Metadata = {",
+      "\ttitle: \"${2:Title}\",",
+      "};",
+      "",
       "const ${1:${TM_FILENAME_BASE/([a-z]+(?:-[a-z]+)*)/${1:/pascalcase}/}} = () => {",
       "\treturn <>$0</>;",
       "};",
