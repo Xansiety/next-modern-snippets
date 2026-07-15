@@ -34,6 +34,8 @@ Modern snippets for React and Next.js 15+ development. Built for the latest patt
 | `ldc`    | Loading Component               | Loading UI component                                 |
 | `err`    | Error Component                 | Error segment with reset functionality               |
 | `prcsp`  | Page with searchParams          | Async page with params and searchParams (Next.js 15+)|
+| `prcm`   | Page Component with Metadata    | Page component with `Metadata` export                |
+| `rfcem`  | Arrow Function + Metadata (DE)  | Arrow function with default export and `Metadata`    |
 
 ### React Native
 
