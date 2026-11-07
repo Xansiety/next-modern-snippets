@@ -2,7 +2,7 @@
   "name": "next-modern-snippets",
   "displayName": "React + Next Modern Snippets",
   "description": "Collection of modern code snippets for React and Next.js 15+ — components, hooks, and page/layout boilerplate with TypeScript support.",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "xansiety",
   "engines": {
     "vscode": "^1.80.0"
